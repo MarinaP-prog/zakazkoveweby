@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10rem;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #3b3a3a;
+}
+.bg-image {
+    width: 100vw;
+    height: 75%;
+    object-fit: cover;
+    position: absolute; 
+    left: 0px; 
+    top: 0px;
+    z-index: -1; 
+}
+
+#home {
+    min-height: 35rem;
+}
+
+.icon-image {
+    height: 6rem;
+    width: 6rem;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+a {
+    color: #3b3a3a;
+}
+.text-color {
+    color: #263D32;
+}
+
+@media (max-width: 767px) {
+    .main-container {
+        padding: 0 1rem;
+    }
+}
