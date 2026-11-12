@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 
 <head>
     <meta charset="UTF-8">
@@ -10,17 +10,16 @@
         src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
         crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Tvorba webových stránek na míru | Moderní webdesign</title>
-
     <meta name="description"
         content="Tvořím moderní a responzivní webové stránky a webové vizitky pro živnostníky, podnikatele a malé firmy. Nabízím také správu a aktualizaci webů.">
 </head>
 
 <body>
-    <div class="main-container">
+    <div class="container main-container">
         <header>
-            <div class="" style="background-color: rgb(162, 187, 181); z-index: 1000;"></div>
             <nav class="navbar md:navbar-expand bg-1 fixed-top" style="background-color: rgb(162, 187, 181);">
                 <div class="container">
                     <a class="navbar-brand" href="#">Zakázkové weby</a>
@@ -64,7 +63,7 @@
             <section id="home" class="header-banner d-flex justify-content-center align-content-end pb-9 flex-wrap">
                 <img src="./images/theglassdesk-desk-2325627_1920.jpg" alt="bg image" class="bg-image">
 
-                <div class="header-content container text-muted text-end">
+                <div class="header-content container text-muted text-end" style="width: 80%;">
                     <h1 class=" p-3 my-5">Vaše webové stránky bez starostí</h1>
                     <h3 class=" p-3 my-5 lh-md">Neztrácejte cenný čas vytvářením a úpravou svých stránek,
                         soustřeďte se na svoje podnikání a starost o web nechte na mě.</h3>
@@ -145,35 +144,532 @@
 
         <!-- PRICING -->
         <section id="pricing" class="mt-12 mx-auto">
+            <div class="container px-4 py-5 mt-12">
+                <div class="row g-4 py-5 mt-12 row-cols-1 row-cols text-center">
+                    <div class="feature col mt-12">
+                        <h2 class="p-3 my-5">Ceník tvorby webových stránek</h2>
+                        <p class="p-3 my-5 lh-md">Vyberte si řešení, které vám nejlépe vyhovuje</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container g-4 px-4 text-start">
+                <div class="row row-cols-1 md:row-cols-3 mb-3 text-center">
+                    <div class="col">
+                        <div class="card mb-4 rounded-6 shadow-sm h-100">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">MINI WEB</h4>
+                                <p class="card-text">Jednoduhá prezentace vašeho podnikání</p>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">od 3 500 Kč</h1>
+                                <ul class="list-unstyled mt-3 mb-4 w-100 text-start">
+                                    <li>
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">Jedna přehledná stránka</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">Přestavení vašich služeb</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">Kontakty (telefon, adresa, mapa)</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">Fotografie a realizace</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">Základní SEO a propojení s Goglem a sociálními
+                                                sítěmi</span>
+                                        </p>
+                                    </li>
+                                    <li>
+
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">Responzivní design (mobil/tablet)</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="list-unstyled mt-4 mb-4 align-self-center text-start">
+                                <li>
+                                    <p class="icon-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+                                        </svg>
+                                        <small class="px-3"><strong>Platforma:</strong> Webnode/Shoptet podle
+                                            dohody</small>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="icon-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-journals" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2" />
+                                            <path
+                                                d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0" />
+                                        </svg>
+                                        <small class="px-3"><strong>Texty:</strong> dodá zákazník</small>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="icon-link icon-link-hover"
+                                        style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                            <path
+                                                d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
+                                            <path
+                                                d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                                        </svg>
+                                        <small class="px-3"><strong>Dodání:</strong> cca 5 - 7 pracovních
+                                            dní</small>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-6 shadow-sm h-100">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">FIREMNÍ WEB</h4>
+                                <p class="card-text">Přehledný web až s 5 postránkami</p>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">od 7 500 Kč</h1>
+                                <ul class="list-unstyled mt-3 mb-4 w-100 text-start">
+                                    <li>
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">Úvodní stránka, O nás, Služby, Reference, Kontakt</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">Přestavení vašich služeb</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">Galerie fotografií (Karusel)</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">Kontakty (telefon, adresa, mapa)</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">Fotografie a realizace</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">Základní SEO a propojení s Goglem a sociálními
+                                                sítěmi</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">Moderní a přehledný design (responzivní
+                                                mobil/tablet)</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="list-unstyled mt-4 mb-4 align-self-center text-start">
+                                <li>
+                                    <p class="icon-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+                                        </svg>
+                                        <small class="px-3"><strong>Platforma:</strong> Webnode/Shoptet podle
+                                            dohody</small>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="icon-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-journals" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2" />
+                                            <path
+                                                d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0" />
+                                        </svg>
+                                        <small class="px-3"><strong>Texty:</strong> dle zvolené varianty</small>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="icon-link icon-link-hover"
+                                        style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                            <path
+                                                d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
+                                            <path
+                                                d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                                        </svg>
+                                        <small class="px-3"><strong>Dodání:</strong> cca 10 - 14 pracovních
+                                            dní</small>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-6 shadow-sm h-100">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">WEB NA MÍRU</h4>
+                                <p class="card-text">Individuální řešení pro větší nároky</p>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">od 14 500 Kč</h1>
+                                <ul class="list-unstyled mt-3 mb-4 w-100 text-start">
+                                    <li>
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">Originálni design dle vašich představ</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">Rozšířená prezentace služeb</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">Pokročíle funkce a prvky</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">SEO optimalizace</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">Propojení s Goglem a sociálními sítěmi</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="icon-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span class="px-3">Moderní a přehledný design (responzivní
+                                                mobil/tablet)</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="list-unstyled mb-4 mt-4 align-self-center text-start">
+                                <li>
+                                    <p class="icon-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+                                        </svg>
+                                        <small class="px-3"><strong>Platforma:</strong> jiné řešení dle
+                                            projektu</small>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="icon-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-journals" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2" />
+                                            <path
+                                                d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0" />
+                                        </svg>
+                                        <small class="px-3"><strong>Texty:</strong> dle zvolené varianty</small>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="icon-link icon-link-hover"
+                                        style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                            <path
+                                                d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
+                                            <path
+                                                d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                                        </svg>
+                                        <small class="px-3"><strong>Dodání:</strong> individuálně, zpravidla 2 - 4
+                                            týdny</small>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="row g-4 py-5 mt-12 row-cols-1 row-cols-lg-3 text-center">
                     <div class="feature col mt-12">
-                        <h2 class="p-3 my-5">Ceny služeb</h2>
+                        <h2 class="p-3 my-5">Ceny doplňkových služeb</h2>
+                        <p class="p-3 my-5 lh-md">Rozšiřte svůj web o užitečné služby</p>
                     </div>
                 </div>
-                <table class="table">
+                <table class="table table-striped">
                     <thead>
                         <tr>
                             <th scope="col" style="width: 70%;">Služba</th>
                             <th scope="col" style="width: 30%;">Cena</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="table-group-divider">
                         <tr>
-                            <td>Vytvoření webových stránek</td>
-                            <td>od 3 000 Kč</td>
+                            <td>Audit vašich stránek</td>
+                            <td>zdarma</td>
                         </tr>
                         <tr>
-                            <td>SEO - optimalizace pro vyhledávače</td>
-                            <td>800 Kč/h</td>
+                            <td>Založení Google Firemního profilu</td>
+                            <td>1 490 Kč</td>
                         </tr>
                         <tr>
-                            <td>Webová analytika</td>
+                            <td>Optimalizace existujícího profilu</td>
+                            <td>990 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Propojení webu s Googlem</td>
+                            <td>390 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Základní SEO rozšíření</td>
+                            <td>1 990 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Přidání další podstránky</td>
+                            <td>1 000 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Rozšíření galerie</td>
+                            <td>790 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Úpravá stávajícího webu</td>
+                            <td>od 700 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Aktualizace obsahu webu</td>
+                            <td>od 500 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Hodinová konzultace</td>
                             <td> 500 Kč/h</td>
                         </tr>
                         <tr>
-                            <td> Zajištění domény a hostingu</td>
+                            <td>Zajištění domény a hostingu</td>
                             <td>od 100 Kč/měsíc</td>
+                        </tr>
+                        <tr>
+                            <td>Převod webu na jinou platformu</td>
+                            <td>od 3 500 Kč</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container">
+                <div class="row g-4 py-5 mt-12 row-cols-1 row-cols-lg-3 text-center">
+                    <div class="feature col mt-12">
+                        <h2 class="p-3 my-5">Správa webu</h2>
+                        <p class="p-3 my-5 lh-md">Postarám se o váš web i po spuštění</p>
+                    </div>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 70%;">Služba</th>
+                            <th scope="col" style="width: 30%;">Cena</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">Správa basic</th>
+                            <td>490 Kč/měsíc</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" style="width: 70%;"></th>
+                                            <th scope="col" style="width: 30%;"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Pravidelná kontrola funkčnosti</th>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                    fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                                </svg>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Základní technická údržba</th>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                    fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                                </svg>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Správa plus</th>
+                            <td>990 Kč/měsíc</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" style="width: 70%;"></th>
+                                            <th scope="col" style="width: 30%;"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Technická údržba, aktualizace</th>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                    fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                                </svg>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Drobné úpravy a podpora</th>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                    fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                                </svg>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Přidávání banerů (svátky, změna pracobní doby, akce apod.)
+                                            </th>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                    fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                                </svg>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -189,11 +685,11 @@
                         <h2 class="p-3 my-5">O mně</h2>
                     </div>
                 </div>
-                <div class="row grid g-4" style="grid-template-columns: 1fr 2fr;">
-                    <div class="col">
-                        <img src="./images/me.jpeg" class="rounded float-start" alt="..." style="max-width: 80%;">
+                <div class="d-flex md:flex-row flex-column gap-4">
+                    <div class="flex-shrink-1">
+                        <img src="./images/me.jpeg" class="rounded float-start img" alt="..." style="max-width: 80%;">
                     </div>
-                    <div class="card-body col">
+                    <div class="W-100">
 
                         <p class="card-text lh-md text-pretty p-4">Jsem začínající podnikatelka, kterou baví tvorba
                             webových stránek.</p>
@@ -281,8 +777,8 @@
                     </div>
                 </div>
                 <div class=" mb-5  text-bg-light p-3">
-                    <div class="row row-cols-2 mx-3 my-3">
-                        <div class="col col-lg-8 equal-height-col">
+                    <div class="d-flex md:flex-row flex-column gap-4">
+                        <div class="W-100">
 
                             <address>
                                 <ul class="list-unstyled mb-1">
@@ -292,31 +788,17 @@
                                     </li>
                                     <li class="p-4">
                                         <p>Napište mi
-                                            <a href="mailto:someone@example.com" class="text-decoration-none"><svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            <a href="mailto:webnazakazku@centrum.cz" class="text-decoration-none">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="#3b3a3a" class="bi bi-envelope-fill mx-1" viewBox="0 0 16 16">
                                                     <path
                                                         d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
                                                 </svg>
-                                                <strong>someone@example.com</strong>
+                                                <strong>webnazakazku@centrum.cz</strong>
                                             </a>
                                         </p>
                                     </li>
-                                    <li class="p-4">
-                                        <p>Zavolejte mi na
-                                            <a href="" class="text-decoration-none">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="#3b3a3a" class="bi bi-telephone-fill mx-1"
-                                                    viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-                                                </svg>
-
-                                                <strong>+420 333 78 901</strong>
-                                            </a>
-                                        </p>
-                                    </li>
-                                    <li class="p-4">
+                                    <li class="px-4">
                                         <p>Napište mi na LinkedIn
                                             <a href="www.linkedin.com/in/marina-pavolova" class="text-decoration-none">
                                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -343,8 +825,8 @@
                                 </ul>
                             </address>
                         </div>
-                        <div class="col col-lg-2 equal-height-col p-2">
-                            <iframe
+                        <div class="flex-shrink-1">
+                            <iframe class="img"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2568.0731053062173!2d14.675142976989763!3d49.934969524345284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b885e5b100dfb%3A0x5b632e401705dc1e!2zxZhhZG92w6EsIDI1MSA2MyBLdW5pY2UtU3RyYW7EjWljZQ!5e0!3m2!1scs!2scz!4v1794305240165!5m2!1scs!2scz"
                                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -354,7 +836,7 @@
         <!-- FOOTER -->
 
         <section class="container">
-            <footer class="py-1 my-1">
+            <footer class="py-4 my-4">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#home">Úvod</a>
@@ -375,7 +857,7 @@
                         <a class="nav-link" href="#contacts">Kontakty</a>
                     </li>
                 </ul>
-                <p class="text-center text-body-secondary">&copy; Zakázkové weby, použité fotografie a ilustrace od <a
+                <p class="text-center text-body-secondary py-4">&copy; Zakázkové weby, použité fotografie a ilustrace od <a
                         href="https://pixabay.com/cs/users/miguelrcarbajal-27344718/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7190317">Miguel
                         Angel Reyes Carbajal</a> a <a
                         href="https://pixabay.com/cs/users/theglassdesk-149631/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2325627">Becca
